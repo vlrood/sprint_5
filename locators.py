@@ -7,7 +7,7 @@ class PlaceLocators:
     FORGOT_PASSWORD_ENTER = (By.XPATH, '//a[@class = "Auth_link__1fOlj"]')  # кнопка в форме восстановления пароля
     FIELD_NAME = (By.NAME, 'name')
     FIELD_EMAIL = (By.XPATH, '//fieldset[2]//input[@name="name"]')
-    FIELD_PASSWORD = (By.NAME, 'Пароль')
+    FIELD_PASSWORD = (By.XPATH, '//fieldset[3]//input[@name="Пароль"]')
     BUTTON_REGISTER = (By.XPATH, '//button[text()="Зарегистрироваться"]')  # кнопка зарегистрироваться
     PASSWORD_ERROR = (By.XPATH, '//p[text()="Некорректный пароль"]')
     LOGIN_EMAIL_INPUT = (By.NAME, 'name')
@@ -21,6 +21,3 @@ class PlaceLocators:
     SECTION_BUN = (By.XPATH, './/span[text()="Булки"]/parent::div')
     SECTION_FILLING = (By.XPATH, './/span[text()="Начинки"]/parent::div')
     TEXT_ASSEMBLE_BURGER = (By.XPATH, './/h1[text() ="Соберите бургер"]')
-    LIST_BUN = (By.XPATH, '//a[@href ="/ingredient/61c0c5a71d1f82001bdaaa6d"]/parent::ul')
-    LIST_SAUCES = (By.XPATH, '//a[@href="/ingredient/61c0c5a71d1f82001bdaaa72"]/parent::ul')
-    LIST_FILLING = (By.XPATH, '//a[@href="/ingredient/61c0c5a71d1f82001bdaaa70"]/parent::ul')

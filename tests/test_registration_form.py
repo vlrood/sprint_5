@@ -24,7 +24,6 @@ class TestFormRegistration:
             )
         )
         assert '/login' in driver.current_url
-        driver.quit()
 
     def test_error_password_driver_is_displayed(self, driver):
         driver.get(settings.URL + 'register')
@@ -37,5 +36,4 @@ class TestFormRegistration:
         register_button = driver.find_element(*PlaceLocators.BUTTON_REGISTER)
         register_button.click()
         assert driver.find_element(*PlaceLocators.PASSWORD_ERROR).is_displayed(), 'Password error does not exist'
-        driver.quit()
         

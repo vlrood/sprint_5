@@ -7,4 +7,5 @@ import settings
 def driver():
     chrome_driver = webdriver.Chrome()
     chrome_driver.get(settings.URL)
-    return chrome_driver
+    yield chrome_driver
+    chrome_driver.quit()
